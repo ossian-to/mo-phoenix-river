@@ -1997,6 +1997,38 @@ ul.map-img li img {
   display: none;
 }
 
+ul.zhu-ma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 1em 0;
+  list-style: none;
+}
+ul.zhu-ma li {
+  max-width: 145px;
+  width: 100%;
+}
+ul.zhu-ma li figure {
+  margin: 0;
+  max-width: 145px;
+}
+ul.zhu-ma li figure img {
+  width: 100%;
+  border-radius: 1em;
+}
+
 footer {
   padding: 6em 1em 3em;
   text-align: center;

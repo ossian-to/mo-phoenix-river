@@ -813,6 +813,29 @@ ul.map-img{
   display: none;
 }
 
+ul.zhu-ma{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 1em 0;
+  list-style: none;
+  li{
+    max-width: 145px;
+    width: 100%;
+    figure{
+      margin: 0;
+      max-width: 145px;
+      img{
+        width: 100%;
+        border-radius: 1em;
+      }
+    }
+  }
+}
+
 // footer
 
 footer{
