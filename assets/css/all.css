@@ -2029,6 +2029,40 @@ ul.zhu-ma li figure img {
   border-radius: 1em;
 }
 
+.tabs .tab-content {
+  padding: 0 0 1em 0;
+}
+
+.time-limiend {
+  font-size: 1.5em;
+  text-align: center;
+  -webkit-animation: flash 1s infinite;
+          animation: flash 1s infinite;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #ff4063;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes flash {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #ff4063;
+  }
+  100% {
+    color: white;
+  }
+}
 footer {
   padding: 6em 1em 3em;
   text-align: center;
