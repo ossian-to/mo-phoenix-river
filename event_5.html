@@ -20,7 +20,7 @@
 
   <script src="assets/js/tsparticles.min.js"></script>
   <script src="assets/js/setting.js"></script>
-  <link rel="stylesheet" href="assets/css/all.css?v=1" />
+  <link rel="stylesheet" href="assets/css/all.css?v=2" />
 </head>
 <body>
   <div class="ossian">
@@ -253,22 +253,22 @@
                   <tr>
                     <td>兔年竹馬</td>
                     <td>25</td>
-                    <td>技能命中+66，進入戰場賦予一次火輪咒Lv5，技能回被+66，鑲英雄符石效果+90%</td>
+                    <td>技能命中+66，進入戰場賦予一次火輪咒Lv5，技能回被+66，鑲英雄符石效果-90%</td>
                   </tr>
                   <tr>
                     <td>兔年鬍鬚</td>
                     <td>25</td>
-                    <td>招喚英雄法力-5，戰鬥勝利時有機率恢復見底的法力，法術傷害-3%，鑲英雄符石效果+90%</td>
+                    <td>招喚英雄法力-5，戰鬥勝利時有機率恢復見底的法力，法術傷害-3%，鑲英雄符石效果-90%</td>
                   </tr>
                   <tr>
                     <td>年兔頭巾</td>
                     <td>41</td>
-                    <td>法術強度+50，物理強度+50，受技能傷害時Lv差距小於4會降低傷害，而反之則增加，鑲英雄符石效果+90%</td>
+                    <td>法術強度+50，物理強度+50，受技能傷害時Lv差距小於4會降低傷害，而反之則增加，鑲英雄符石效果-90%</td>
                   </tr>
                   <tr>
                     <td>兔年眼鏡</td>
                     <td>20</td>
-                    <td>遇敵機率+15%，法術技能傷害+3，物理技能傷害+3%，鑲英雄符石效果+90%</td>
+                    <td>遇敵機率+15%，法術技能傷害+3，物理技能傷害+3%，鑲英雄符石效果-90%</td>
                   </tr>
                 </tbody>
               </table><!--.table.table-2.gifts end-->
@@ -323,14 +323,22 @@
                     <li>七、加工裝備成功+9<br>(不使用穩定劑的情況)</li>
                   </ul>
                   <h4>新追加系統</h4>
-                  <ul class="everyday-list">
-                    <li>地區懸賞任務</li>
+                  <ul class="everyday-list full">
+                    <li>
+                      <h5>地區懸賞任務</h5>
+                      <p>NPC：任務接待員<em>迪西</em></p>
+                      <figure class="npc"><img src="assets/images/npc/01.png" alt="迪西"></figure>
+                      <p>城鎮將出現安和廳，掌管附近區域的怪物懸賞，玩家在前往冒險區域練等時，可前來接取特定的怪物任務，回城時繳交任務已得到些許報酬喔。</p>
+                      <p>首次出現郡業安和廳於(47,93)，玩家在任務佈告欄接取後，會取得任務懸賞單，獵取指定怪物數量後，回到安和廳向接待員繳交即可完成。</p>
+                    </li>
                   </ul>
                   <ul class="everyday-list-add">
                     <!-- <li>新追加系統：<strong>地區懸賞任務</strong></li> -->
-                    <li>活動限定：<strong>活動 boss (卞氏、甘氏、潘氏)</strong></li>
-                    <li>NPC：<strong>寧虎林 23,108</strong></li>
-                    <li>活動時段：<strong>每日 20:00~22:00</strong></li>
+                    <li>活動限定：<strong>幻境試煉；限定活動 (卞氏、甘氏、潘氏)</strong></li>
+                    <li>NPC：<strong>月下隱士；老思基 23,108</strong></li>
+                    <li>活動時段：<strong>活動在週五到周日晚上 20:00~21:00 於第七分流進行</strong></li>
+                    <li>活動內容：<br>開放玩家挑戰世界 Boss，戰鬥會出現 3 名英雄與玩家對戰，英雄間的血量是共享的，玩家與 Boss 對戰所造成的傷害，在戰鬥勝利或是全員倒下後，將轉為活動的挑戰積分，但要注意逃離戰場的玩家是不會獲得分數的，如果玩家們取得勝利，Boss 有機率掉落不具名道具之一。
+                    </li>
                   </ul>
                 </div>
                 <h3>2.積分獲得分為『任務分數』、『挑戰分數』</h3>
@@ -345,16 +353,16 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>隨機任務</td>
+                            <td>完成隨機任務</td>
                           </tr>
                           <tr>
-                            <td>限時送信</td>
+                            <td>完成限時送信</td>
                           </tr>
                           <tr>
-                            <td>完成家族副本</td>
+                            <td>完成完成家族副本</td>
                           </tr>
                           <tr>
-                            <td>地區懸賞任務</td>
+                            <td>完成地區懸賞任務</td>
                           </tr>
                         </tbody>
                       </table>
@@ -368,24 +376,36 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>粉紅哥布林</td>
+                            <td>戰勝粉紅哥布林</td>
                           </tr>
                           <tr>
-                            <td>賽的胖克材料</td>
+                            <td>繳交賽的胖克收購</td>
                           </tr>
                           <tr>
-                            <td>內關戰</td>
+                            <td>成功防禦內關戰</td>
                           </tr>
                           <tr>
-                            <td>裝備成功+9</td>
+                            <td>不使用穩定劑的條件下成功把裝備+8加工至+9</td>
                           </tr>
                           <tr>
-                            <td>活動boss</td>
+                            <td>挑戰幻境試煉 (限定活動)</td>
                           </tr>
                         </tbody>
                       </table>
                     </dd>
                   </dl>
+                  <div class="hello-npc">
+                    <ul>
+                      <li>每一項目標所獲得的分數不同，並且任務積分會有每日可獲取上限</li>
+                      <li>取得的分數可以向 <em>活動小村姑</em> 郡業 (64,173) 兌換獎勵，獎勵有分為<strong>甲類</strong>與<strong>乙類</strong>：
+                        <ol>
+                          <li><strong>甲類：</strong>可以使用兩種積分兌換 (優先使用任務分)。</li>
+                          <li><strong>乙類：</strong>只能使用挑戰分兌換。</li>
+                        </ol></li>
+                      <li>也可將取得活動物品 <em>梅花枝葉</em> 與 <em>不具名道具</em> 用於兌換新英雄。</li>
+                    </ul>
+                    <figure class="npc"><img src="assets/images/npc/02.png" alt="活動小村姑"></figure>
+                  </div>
                 </div>
                 <h3>3.活動 BOSS 說明</h3>
                 <div class="no-padding-container">
@@ -426,11 +446,26 @@
                     </dd>
                   </dl>
                 </div>
-                <h3>4.活動兌換選項</h3>
+                <h3>4.計算分數要點</h3>
+                <div class="no-padding-container">
+                  <div class="hello-npc">
+                    <p>Boss 依照累計傷害計算分數，並且由英雄造成的比例為 50%，如果英雄為魏蜀吳陣營時，計算為 100%，卞氏、甘氏、潘氏取得的加成更高。玩家造成的傷害會依照職業有不同的比例計算：</p>
+                    <ul class="point-line">
+                      <li>霸王-夜行者 12%</li>
+                      <li>仙術士-蠱醫 15%</li>
+                      <li>機關匠 20%</li>
+                      <li>天師-尊者 18%</li>
+                      <li>血魔-武神 10%</li>
+                      <li>醫仙 30%</li>
+                      <li>分身、召喚物 15%</li>
+                    </ul>
+                  </div>
+                </div>
+                <h3>5.活動兌換選項</h3>
                 <div class="no-padding-container">
                   <dl class="option-items">
                     <dd>
-                      <h4 style="padding-bottom: 1em;">僅可使用挑戰分</h4>
+                      <h4 style="padding-bottom: 1em;">挑戰分</h4>
                       <table class="table table-2">
                         <thead>
                           <tr>
@@ -440,70 +475,70 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>古物盒</td>
-                            <td>1500</td>
+                            <td>力量搞笑包子*8</td>
+                            <td>30</td>
                           </tr>
                           <tr>
-                            <td>靈光寶箱</td>
-                            <td>2000</td>
+                            <td>敏捷搞笑包子*8</td>
+                            <td>30</td>
                           </tr>
                           <tr>
-                            <td>黃金強化凝固劑</td>
+                            <td>體質搞笑包子*8</td>
+                            <td>30</td>
+                          </tr>
+                          <tr>
+                            <td>智慧搞笑包子*8</td>
+                            <td>30</td>
+                          </tr>
+                          <tr>
+                            <td>運氣搞笑包子*8</td>
+                            <td>30</td>
+                          </tr>
+                          <tr>
+                            <td>武勇搞笑饅頭*5</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>靈巧搞笑饅頭*5</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>睿智搞笑饅頭*5</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>活力搞笑饅頭*5</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>強運搞笑饅頭*5</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>隨機英雄卡包</td>
                             <td>500</td>
                           </tr>
                           <tr>
-                            <td>英雄卡包</td>
-                            <td>300</td>
+                            <td>古物盒</td>
+                            <td>1000</td>
+                          </tr>
+                          <tr>
+                            <td>黃金強化凝固劑*3</td>
+                            <td>1500</td>
                           </tr>
                           <tr>
                             <td>裝有未知竹馬的包裹</td>
                             <td>1500</td>
                           </tr>
                           <tr>
-                            <td>英雄搞笑包子禮</td>
-                            <td>30</td>
-                          </tr>
-                          <tr>
-                            <td>英雄搞笑包子敏</td>
-                            <td>30</td>
-                          </tr>
-                          <tr>
-                            <td>英雄搞笑包子智</td>
-                            <td>30</td>
-                          </tr>
-                          <tr>
-                            <td>英雄搞笑包子體</td>
-                            <td>30</td>
-                          </tr>
-                          <tr>
-                            <td>英雄搞笑包子運</td>
-                            <td>30</td>
-                          </tr>
-                          <tr>
-                            <td>英雄搞笑饅頭武</td>
-                            <td>100</td>
-                          </tr>
-                          <tr>
-                            <td>英雄搞笑饅頭巧</td>
-                            <td>100</td>
-                          </tr>
-                          <tr>
-                            <td>英雄搞笑饅頭智</td>
-                            <td>100</td>
-                          </tr>
-                          <tr>
-                            <td>英雄搞笑饅頭體</td>
-                            <td>100</td>
-                          </tr>
-                          <tr>
-                            <td>英雄搞笑饅頭運</td>
-                            <td>100</td>
+                            <td>靈光寶匣</td>
+                            <td>3000</td>
                           </tr>
                         </tbody>
                       </table>
                     </dd>
                     <dd>
-                      <h4 style="padding-bottom: 1em;">可使用任務分</h4>
+                      <h4 style="padding-bottom: 1em;">挑戰分+任務分</h4>
                       <table class="table table-2">
                         <thead>
                           <tr>
@@ -513,39 +548,39 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>玩家經驗值</td>
-                            <td>350</td>
+                            <td>人物經驗值</td>
+                            <td>400</td>
                           </tr>
                           <tr>
-                            <td>招喚中英雄經驗值</td>
-                            <td>450</td>
+                            <td>英雄經驗值</td>
+                            <td>500</td>
                           </tr>
                           <tr>
-                            <td>強效快活相(綁定)</td>
+                            <td>強效快活香(綁定)*3</td>
                             <td>50</td>
                           </tr>
                           <tr>
-                            <td>強效具鈴香(綁定)</td>
+                            <td>強效聚靈香(綁定)*3</td>
                             <td>50</td>
                           </tr>
                           <tr>
                             <td>靈犀轉骨丹(綁定)</td>
-                            <td>1000</td>
+                            <td>1200</td>
                           </tr>
                           <tr>
-                            <td>招財香(綁定)</td>
+                            <td>招財香(綁定)*3</td>
                             <td>30</td>
                           </tr>
                           <tr>
-                            <td>招魔香(綁定)</td>
+                            <td>招魔香(綁定)*3</td>
                             <td>30</td>
                           </tr>
                           <tr>
-                            <td>招魂香(綁定)</td>
+                            <td>招魂香(綁定)*3</td>
                             <td>30</td>
                           </tr>
                           <tr>
-                            <td>進寶香(綁定)</td>
+                            <td>進寶香(綁定)*3</td>
                             <td>30</td>
                           </tr>
                         </tbody>
@@ -553,11 +588,55 @@
                     </dd>
                   </dl>
                   <h4>另外的兌換方式</h4>
+                  <div style="padding-bottom: 1em;">
                   <ol class="order-methods">
-                    <li>梅花枝葉+不具名的笛=1兌換卞氏卡</li>
-                    <li>梅花枝葉+不具名的刀=1兌換甘氏卡</li>
-                    <li>梅花枝葉+不具名的扇=1兌換潘氏卡</li>
+                    <li>梅花枝葉x(99)=<strong>1兌換隨機三國英雄</strong></li>
+                    <li>梅花枝葉x(99)+不具名的笛=<strong>1兌換卞氏卡</strong></li>
+                    <li>梅花枝葉x(99)+不具名的刀=<strong>1兌換甘氏卡</strong></li>
+                    <li>梅花枝葉x(99)+不具名的扇=<strong>1兌換潘氏卡</strong></li>
+                    <li>梅花枝葉x(297)+不具名的笛x(3)=<strong>1兌換武宣光輝</strong></li>
+                    <li>梅花枝葉x(297)+不具名的刀x(3)=<strong>1兌換昭烈光輝</strong></li>
+                    <li>梅花枝葉x(297)+不具名的扇x(3)=<strong>1兌換潘淑光輝</strong></li>
+                    <li>梅花枝葉x(10)=<strong>1兌換 任務積分100</strong></li>
                   </ol>
+                  </div>
+                  <h4>新增道具</h4>
+                  <ul class="new-tools">
+                    <li>
+                      <dl class="new-tools-description">
+                        <dt>黃金強化凝固劑</dt>
+                        <dd>
+                          <figure>
+                            <img src="assets/images/icons/icon-1.png" alt="黃金強化凝固劑">
+                          </figure>
+                          強化靈具卡時放入使用，等級5或以下的卡片，強化失敗時，以降低強化等級代替卡片消失，無論作用是否發生都會被消耗掉。
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl class="new-tools-description">
+                        <dt>裝有未知竹馬的包裹</dt>
+                        <dd>
+                          <figure>
+                            <img src="assets/images/icons/icon-2.png" alt="裝有未知竹馬的包裹">
+                          </figure>
+                          裝有內有特定竹馬的包裹。<br>
+                          ※會有永不毀損竹馬，包裹內皆可塑形。
+                        </dd>
+                      </dl>
+                    </li>
+                    <li>
+                      <dl class="new-tools-description">
+                        <dt>靈光寶匣</dt>
+                        <dd>
+                          <figure>
+                            <img src="assets/images/icons/icon-3.png" alt="靈光寶匣">
+                          </figure>
+                          裝有隨機道具的寶盒，內容可能有六方金剛結晶體、六方晶原礦、或靈具卡相關道具。
+                        </dd>
+                      </dl>
+                    </li>
+                  </ul>
                 </div>
               </dd>
             </dl>
@@ -592,14 +671,15 @@
                   <li>
                     <em>活動 BOSS</em>
                     <ul>
-                      <li>NPC於寧虎林 23,108</li>
-                      <li>活動時段：每日20:00~22:00</li>
-                      <li>玩家點擊 NPC 會提示挑戰，在時間結束或者 BOSS 的 HP 歸零之前都可以進入挑戰</li>
+                      <li>NPC於寧虎林 <em>月下隱士 老思基</em> (23,103)</li>
+                      <li>活動時段：<em>活動在週五到周日晚上20:00~21:00於第七分流進行</em></li>
+                      <li>玩家點擊 NPC 會提示挑戰，在時間結束或者 BOSS 的 HP 歸零之前都可以進入挑戰。</li>
                       <li>挑戰時會依照隊伍內最高等級的玩家做 BOSS 的數值設定 (包含轉生次數)、並附加咒符衰弱。</li>
                       <li>BOSS 預設有傷害減免 50% (僅針對玩家或召喚物)。</li>
                       <li>戰鬥結束 (勝利或全滅) 時，依照該場戰鬥中所累計的分數，均分分數給每個隊員。</li>
-                      <li>傷害轉換後的數值，每累積 10000 則轉為積分1點。</li>
+                      <li>傷害轉換後的數值，每累積 10000 則轉為積分 1 點。</li>
                       <li>如任何逃離戰場的成員，無法從該場戰鬥獲得分數。</li>
+                      <li>若 Boss 在一小時內沒有被擊敗，戰場內玩家會被驅逐。</li>
                     </ul>
                   </li>
                 </ol>
@@ -610,7 +690,7 @@
                 </hgroup>
                 <ul>
                   <li>活動 BOSS：依照輸出給予隊伍成員積分，戰鬥中由特定英雄造成的傷害會有額外分數。</li>
-                  <li>古代遺跡、寧虎林額外掉落梅花枝葉，用於兌換。</li>
+                  <li>寧虎林與幽納洞窟的怪物有低機率掉落梅花枝葉，可用於兌換獎勵。</li>
                   <li>積分兌換：玩家經驗值，轉生次數會減少倍率，80 以上為現有經驗 10%+ 超出 80 的每 LV1 就少 0.5%，英雄經驗值，70 以上不可兌換。</li>
                 </ul>
               </dd>

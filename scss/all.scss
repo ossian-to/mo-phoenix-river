@@ -229,18 +229,46 @@ ul.everyday-list{
   padding: 1em 0;
   list-style: none;
   li{
-    
     padding: 1em;
     text-align: center;
     color: $document-bg-color;
     background-color: $document-default-color;
     border-radius: 10px;
   }
+  &.full{
+    li{
+      h5{
+        margin: 0;
+        padding: 0;
+        font-size: 1.25rem;
+      }
+      em{
+        display: inline-block;
+        padding: 0 0.25em;
+        font-style: normal;
+        font-size: 1rem;
+        color: $custom-4;
+        background-color: $custom-2;
+        border-radius: 5px;
+      }
+    }
+  }
 }
+
+figure{
+  margin: 0 auto;
+  max-width: 145px;
+  width: 100%;
+  img{
+    width: 100%;
+    border-radius: 1em;
+  }
+}
+
 
 ul.everyday-list-add{
   margin: 0 auto;
-  max-width: 350px;
+  max-width: 750px;
   li{
     border-bottom: 5px solid transparent;
   }
@@ -360,7 +388,7 @@ ol.order-methods{
   flex-direction: row;
   // flex-wrap: nowrap;
   gap: 1em;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   margin: 0 auto;
   padding: 1em 0 0 0;
@@ -371,6 +399,56 @@ ol.order-methods{
     text-align: center;
     background-color: $custom-2;
     border-radius: 10px;
+    strong{
+      color: white;
+      font-weight: normal;
+    }
+  }
+}
+
+ul.new-tools{
+  display: flex;
+  // flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 1em 0;
+  list-style: none;
+  li{
+    // max-width: 250px;
+    width: 100%;
+  }
+}
+
+dl.new-tools-description{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-radius: 1em;
+  height: 100%;
+  dt{
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.25em;
+    color: $document-bg-color;
+    background-color: $document-default-color;
+  }
+  dd{
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    height: 100%;
+    background-color: $custom-2;
+    > figure{
+      padding: 0 0 1em 0;
+      max-width: 39px;
+      width: 100%;
+      img{
+        width: 100%;
+        border-radius: unset;
+      }
+    }
   }
 }
 
@@ -856,6 +934,78 @@ ul.zhu-ma{
     color: white;
   }
 }
+
+.hello-npc{
+  margin: 0 auto;
+  max-width: 750px;
+  em{
+    display: inline-block;
+    padding: 0 0.25em;
+    font-style: normal;
+    color: $custom-2;
+    background-color: $custom-4;
+    border-radius: 5px;
+  }
+  ul{
+    li{
+      strong{
+        color: white;
+      }
+      >ol{
+        padding: 1em 0 1em 1.25em;
+      }
+    }
+  }
+}
+
+ul.point-line{
+  li{
+    border-bottom: 1px dotted $custom-5;
+  }
+}
+
+.new-info{
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 1500px;
+  width: 100%;
+  text-align: center;
+  h3{
+    margin: 0;
+    padding: 0.5rem 1rem;
+    color: $document-bg-color;
+    background-color: $document-default-color;
+  }
+}
+
+ul.drop-obj{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  > li{
+    padding: 1em 0;
+    width: 405px;
+    >figure{
+      margin: 0;
+      padding: 0;
+      max-width: 399px;
+      figcaption{
+        font-size: 1.25em;
+      }
+      a{
+        >img{
+          width: 100%;
+          border-radius: unset;
+        }
+      }
+    }
+  }
+}
+
 // footer
 
 footer{

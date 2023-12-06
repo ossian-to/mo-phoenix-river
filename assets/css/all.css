@@ -1513,10 +1513,34 @@ ul.everyday-list li {
   background-color: #e6bf9a;
   border-radius: 10px;
 }
+ul.everyday-list.full li h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+}
+ul.everyday-list.full li em {
+  display: inline-block;
+  padding: 0 0.25em;
+  font-style: normal;
+  font-size: 1rem;
+  color: #eccdae;
+  background-color: #695652;
+  border-radius: 5px;
+}
+
+figure {
+  margin: 0 auto;
+  max-width: 145px;
+  width: 100%;
+}
+figure img {
+  width: 100%;
+  border-radius: 1em;
+}
 
 ul.everyday-list-add {
   margin: 0 auto;
-  max-width: 350px;
+  max-width: 750px;
 }
 ul.everyday-list-add li {
   border-bottom: 5px solid transparent;
@@ -1642,9 +1666,9 @@ ol.order-methods {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1657,6 +1681,60 @@ ol.order-methods li {
   text-align: center;
   background-color: #695652;
   border-radius: 10px;
+}
+ol.order-methods li strong {
+  color: white;
+  font-weight: normal;
+}
+
+ul.new-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 1em 0;
+  list-style: none;
+}
+ul.new-tools li {
+  width: 100%;
+}
+
+dl.new-tools-description {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-radius: 1em;
+  height: 100%;
+}
+dl.new-tools-description dt {
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.25em;
+  color: #2a2623;
+  background-color: #e6bf9a;
+}
+dl.new-tools-description dd {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  height: 100%;
+  background-color: #695652;
+}
+dl.new-tools-description dd > figure {
+  padding: 0 0 1em 0;
+  max-width: 39px;
+  width: 100%;
+}
+dl.new-tools-description dd > figure img {
+  width: 100%;
+  border-radius: unset;
 }
 
 .tabs {
@@ -2063,6 +2141,75 @@ ul.zhu-ma li figure img {
     color: white;
   }
 }
+.hello-npc {
+  margin: 0 auto;
+  max-width: 750px;
+}
+.hello-npc em {
+  display: inline-block;
+  padding: 0 0.25em;
+  font-style: normal;
+  color: #695652;
+  background-color: #eccdae;
+  border-radius: 5px;
+}
+.hello-npc ul li strong {
+  color: white;
+}
+.hello-npc ul li > ol {
+  padding: 1em 0 1em 1.25em;
+}
+
+ul.point-line li {
+  border-bottom: 1px dotted #7f6a65;
+}
+
+.new-info {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 1500px;
+  width: 100%;
+  text-align: center;
+}
+.new-info h3 {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  color: #2a2623;
+  background-color: #e6bf9a;
+}
+
+ul.drop-obj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.drop-obj > li {
+  padding: 1em 0;
+  width: 405px;
+}
+ul.drop-obj > li > figure {
+  margin: 0;
+  padding: 0;
+  max-width: 399px;
+}
+ul.drop-obj > li > figure figcaption {
+  font-size: 1.25em;
+}
+ul.drop-obj > li > figure a > img {
+  width: 100%;
+  border-radius: unset;
+}
+
 footer {
   padding: 6em 1em 3em;
   text-align: center;
@@ -2200,6 +2347,9 @@ img.img-logo {
     width: 100%;
     max-width: 100%;
   }
+  dl.reward.any dd:nth-child(3) {
+    width: 100%;
+  }
   ol.order-methods {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2235,6 +2385,15 @@ img.img-logo {
   footer span {
     display: block;
   }
+  ul.new-tools {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul.new-tools li {
+    max-width: 100%;
+  }
 }
 @media only screen and (min-width: 320px) {
   .tabs label {
@@ -2250,10 +2409,6 @@ img.img-logo {
   }
   dl.reward.any {
     grid-template-columns: 1fr 1fr;
-  }
-  ol.order-methods {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
   }
   ol.order-methods li {
     width: 200px;
@@ -2322,11 +2477,24 @@ img.img-logo {
   ul.everyday-list li {
     width: 250px;
   }
+  ul.everyday-list.full li {
+    max-width: 750px;
+    width: 100%;
+  }
   footer {
     font-size: initial;
   }
   footer span {
     display: initial;
+  }
+  ul.new-tools {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  ul.new-tools li {
+    max-width: 250px;
   }
 }
 @media only screen and (min-width: 920px) {
