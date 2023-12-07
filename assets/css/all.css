@@ -1528,17 +1528,14 @@ ul.everyday-list.full li em {
   border-radius: 5px;
 }
 
-figure {
+figure.npc {
   margin: 0 auto;
-  max-width: 520px;
+  max-width: 145px;
   width: 100%;
 }
-figure img {
+figure.npc img {
   width: 100%;
   border-radius: 1em;
-}
-figure.npc {
-  max-width: 145px;
 }
 
 ul.everyday-list-add {

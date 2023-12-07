@@ -256,15 +256,14 @@ ul.everyday-list{
 }
 
 figure{
-  margin: 0 auto;
-  max-width: 520px;
-  width: 100%;
-  img{
-    width: 100%;
-    border-radius: 1em;
-  }
   &.npc{
+    margin: 0 auto;
     max-width: 145px;
+    width: 100%;
+    img{
+      width: 100%;
+      border-radius: 1em;
+    }
   }
 }
 
